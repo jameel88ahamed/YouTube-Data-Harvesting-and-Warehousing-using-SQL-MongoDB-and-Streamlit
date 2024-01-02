@@ -68,7 +68,6 @@ def get_playlist_details(channel_id):
     next_page_token=response.get('nextPageToken')
     if next_page_token is None:
       next_page=False
-  playlist_data.append(data)
   return playlist_data
 
 #FUNCTION FOR GETTING VIDEO IDS
