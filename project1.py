@@ -25,7 +25,7 @@ with st.sidebar:
                                    "nav-link-selected": {"background-color": "#C80101"}})
     
 #GETTING CONNECTION FOR YOUTUBE API
-api_key='AIzaSyB0jnwVM9TijcBWDh8H0Ui-tbanztfA0Z4'
+api_key='Enter your API Key'
 youtube=build('youtube','v3',developerKey=api_key)
 
 #FUNCTION FOR GETTING CHANNEL DETAILS
@@ -157,7 +157,7 @@ def get_video_details(video_ids):
   return video_data
 
 #CONNECTING MDB
-client=pymongo.MongoClient('mongodb+srv://Jameel123:Jameel123@nosql.7dz8wop.mongodb.net/?retryWrites=true&w=majority')
+client=pymongo.MongoClient('Enter your drivers link')
 db=client['Youtube_data']
 
 #FUNCTION FOR INSERTING DATA TO MDB
@@ -180,7 +180,7 @@ def insert_to_mdb(channel_id):
 def channel_table():
     mydb=psycopg2.connect(host='localhost',
                                 user='postgres',
-                                password='Jameel123',
+                                password='Enter your password',
                                 database='youtube_data',
                                 port='5432')
     cursor=mydb.cursor()
@@ -202,7 +202,7 @@ def channel_table():
 def insert_channel_details(chn_name):
     mydb=psycopg2.connect(host='localhost',
                                 user='postgres',
-                                password='Jameel123',
+                                password='Enter your password',
                                 database='youtube_data',
                                 port='5432')
     cursor=mydb.cursor()
@@ -239,7 +239,7 @@ def insert_channel_details(chn_name):
 def playlist_table():
     mydb=psycopg2.connect(host='localhost',
                                 user='postgres',
-                                password='Jameel123',
+                                password='Enter your password',
                                 database='youtube_data',
                                 port='5432')
     cursor=mydb.cursor()
@@ -260,7 +260,7 @@ def playlist_table():
 def insert_playlist_details(chn_name):
     mydb=psycopg2.connect(host='localhost',
                                 user='postgres',
-                                password='Jameel123',
+                                password='Enter your password',
                                 database='youtube_data',
                                 port='5432')
     cursor=mydb.cursor()
@@ -298,7 +298,7 @@ def insert_playlist_details(chn_name):
 def video_table():
     mydb=psycopg2.connect(host='localhost',
                                 user='postgres',
-                                password='Jameel123',
+                                password='Enter your password',
                                 database='youtube_data',
                                 port='5432')
     cursor=mydb.cursor()
@@ -327,7 +327,7 @@ def video_table():
 def insert_video_details(chn_name):
     mydb=psycopg2.connect(host='localhost',
                                 user='postgres',
-                                password='Jameel123',
+                                password='Enter your password',
                                 database='youtube_data',
                                 port='5432')
     cursor=mydb.cursor()
@@ -380,7 +380,7 @@ def insert_video_details(chn_name):
 def comment_table():
     mydb=psycopg2.connect(host='localhost',
                                 user='postgres',
-                                password='Jameel123',
+                                password='Enter your password',
                                 database='youtube_data',
                                 port='5432')
     cursor=mydb.cursor()
@@ -402,7 +402,7 @@ def comment_table():
 def insert_comment_details(chn_name):
     mydb=psycopg2.connect(host='localhost',
                                 user='postgres',
-                                password='Jameel123',
+                                password='Enter your password',
                                 database='youtube_data',
                                 port='5432')
     cursor=mydb.cursor()
@@ -498,7 +498,7 @@ def drop_tables(chn_id):
     try:
         mydb=psycopg2.connect(host='localhost',
                                     user='postgres',
-                                    password='Jameel123',
+                                    password='Enter your password',
                                     database='youtube_data',
                                     port='5432')
         cursor=mydb.cursor()
@@ -531,7 +531,7 @@ def channel_names():
 def channel_sql():
     mydb=psycopg2.connect(host='localhost',
                                     user='postgres',
-                                    password='Jameel123',
+                                    password='Enter your password',
                                     database='youtube_data',
                                     port='5432')
     cursor=mydb.cursor()
@@ -609,7 +609,7 @@ elif selected == "Queries":
     try:
         mydb=psycopg2.connect(host='localhost',
                                     user='postgres',
-                                    password='Jameel123',
+                                    password='Enter your password',
                                     database='youtube_data',
                                     port='5432')
         cursor=mydb.cursor()
